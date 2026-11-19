@@ -1,0 +1,20 @@
+# Half Marathon Tracker
+
+Training log for a January 2027 half marathon: miles, run/walk segments, speed, heart rate, shoes, body checks, and a goals timeline.
+
+## Use
+
+```sh
+node server.js        # http://localhost:4173, the form saves to data/log.json
+node scripts/build.js # dist/index.html, one self-contained file with the data inlined
+```
+
+No dependencies. `data/log.json` is the source of truth; most entries are added from chat reports, the form is the second way in.
+
+## Data
+
+- `runs[]`: `date`, `surface`, `shoeId`, `segments[]` (`type` run/walk, `miles`, optional `mph`, `hr` as a number or `[low, high]`, `hrApprox`), optional `rpe`, `lift`, `notes`, and `body[]` (`area`, `level` 0-3, `note`).
+- `goals[]`: each goal keeps its own `history[]` of dated changes with a reason, so revisions stay visible.
+- `shoes[]`, `injuries[]`, `observations[]`, `race`, `plan`.
+
+Body scale: 0 none, 1 minor irritation, 2 ache, 3 pain / had to stop.

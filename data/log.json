@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "trackingStart": "2026-11-14",
+    "updated": "2026-11-18",
+    "severityScale": {
+      "0": "none",
+      "1": "minor irritation",
+      "2": "ache",
+      "3": "pain / had to stop"
+    }
+  },
+  "race": {
+    "name": null,
+    "date": null,
+    "window": "January 2027",
+    "distanceMi": 13.1
+  },
+  "plan": {
+    "name": "12-week run/walk plan",
+    "notes": "Lifts on run days."
+  },
+  "goals": [
+    {
+      "id": "half-jan-2027",
+      "title": "Run a half marathon",
+      "target": "January 2027 (race and exact date not recorded yet)",
+      "status": "active",
+      "history": [
+        {
+          "date": "2026-11-18",
+          "change": "Goal recorded: half marathon in January 2027, following a 12-week run/walk plan with lifts on run days.",
+          "reason": "Set earlier in November 2026; entered when the tracker was created."
+        }
+      ]
+    }
+  ],
+  "shoes": [
+    {
+      "id": "triumph-23",
+      "name": "Saucony Triumph 23",
+      "startDate": "2026-11-14",
+      "notes": "New. Right knee has not ached since switching."
+    },
+    {
+      "id": "ride-12",
+      "name": "Saucony Ride 12",
+      "startDate": null,
+      "notes": "Previous daily shoe for a couple of years. Mileage before tracking not recorded."
+    }
+  ],
+  "injuries": [
+    {
+      "area": "right knee",
+      "name": "Jumper's knee (patellar tendinopathy)",
+      "detail": "Inner side, below the kneecap.",
+      "onset": "Early November 2026",
+      "trigger": "Belt squats the day after increasing run distance.",
+      "status": "No ache since 2026-11-14 (first run in Triumph 23)."
+    }
+  ],
+  "observations": [
+    {
+      "date": "2026-11-18",
+      "topic": "heart rate",
+      "note": "First mile sits around 150 bpm; second mile is higher, 160-170 bpm."
+    }
+  ],
+  "bodyAreas": ["right knee", "left knee", "right ankle", "left ankle"],
+  "runs": [
+    {
+      "id": "2026-11-14",
+      "date": "2026-11-14",
+      "surface": "treadmill",
+      "shoeId": "triumph-23",
+      "segments": [
+        { "type": "run", "miles": 1.0 },
+        { "type": "run", "miles": 0.5 }
+      ],
+      "body": [
+        { "area": "right knee", "level": 0, "note": "No ache." }
+      ],
+      "notes": "First run in the Saucony Triumph 23. Ran 1 mile, then 0.5. Speed not recorded; surface assumed treadmill."
+    },
+    {
+      "id": "2026-11-16",
+      "date": "2026-11-16",
+      "surface": "treadmill",
+      "shoeId": "triumph-23",
+      "segments": [
+        { "type": "run", "miles": 1.0, "mph": 5.4 },
+        { "type": "walk", "miles": 0.1 },
+        { "type": "run", "miles": 1.0, "mph": 5.4 }
+      ],
+      "body": [
+        { "area": "right knee", "level": 0, "note": "No ache." }
+      ],
+      "notes": "Run 1 / walk 0.1 / run 1 at 5.4 mph."
+    },
+    {
+      "id": "2026-11-18",
+      "date": "2026-11-18",
+      "surface": "treadmill",
+      "shoeId": "triumph-23",
+      "segments": [
+        { "type": "run", "miles": 1.0, "mph": 5.4, "hr": 150, "hrApprox": true },
+        { "type": "walk", "miles": 0.1 },
+        { "type": "run", "miles": 1.0, "mph": 5.3, "hr": [160, 170], "hrApprox": true }
+      ],
+      "body": [
+        { "area": "right knee", "level": 0, "note": "Has not ached since the shoe change." },
+        { "area": "right ankle", "level": 1, "note": "Minor irritation." },
+        { "area": "left knee", "level": 1, "note": "Minor irritation." }
+      ],
+      "notes": "Run 1 at 5.4 / walk 0.1 / run 1 at 5.3. HR is the typical pattern reported, not a measured reading for this run."
+    }
+  ]
+}
