@@ -1,13 +1,14 @@
 {
   "meta": {
-    "trackingStart": "2026-11-14",
+    "trackingStart": "2026-10-01",
     "updated": "2026-11-18",
     "severityScale": {
       "0": "none",
       "1": "minor irritation",
       "2": "ache",
       "3": "pain / had to stop"
-    }
+    },
+    "sessionHrNote": "Session HR and minutes come from Strava and cover the whole workout, including lifting, bike and rehab."
   },
   "race": {
     "name": null,
@@ -43,7 +44,7 @@
     {
       "id": "triumph-23",
       "name": "Saucony Triumph 23",
-      "startDate": "2026-11-14",
+      "startDate": "2026-11-15",
       "notes": "New. Right knee has not ached since switching."
     },
     {
@@ -58,9 +59,9 @@
       "area": "right knee",
       "name": "Jumper's knee (patellar tendinopathy)",
       "detail": "Inner side, below the kneecap.",
-      "onset": "Early November 2026",
+      "onset": "Right after the first 2.5 mi workout (about Nov 6, 2026)",
       "trigger": "Belt squats the day after increasing run distance.",
-      "status": "No ache since 2026-11-14 (first run in Triumph 23)."
+      "status": "No ache since 2026-11-15 (first run in Triumph 23)."
     }
   ],
   "observations": [
@@ -78,8 +79,231 @@
   ],
   "runs": [
     {
-      "id": "2026-11-14",
-      "date": "2026-11-14",
+      "id": "2026-10-01",
+      "date": "2026-10-01",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 1.0
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20414151492",
+      "sessionMin": 25,
+      "hrAvg": 142,
+      "hrMax": 168,
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+    },
+    {
+      "id": "2026-10-07",
+      "date": "2026-10-07",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 1.0
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20496413884",
+      "sessionMin": 56,
+      "hrAvg": 132,
+      "hrMax": 166,
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+    },
+    {
+      "id": "2026-10-13",
+      "date": "2026-10-13",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 1.0
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20575639602",
+      "sessionMin": 33,
+      "hrAvg": 114,
+      "hrMax": 143,
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+    },
+    {
+      "id": "2026-10-24",
+      "date": "2026-10-24",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 1.5
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20717243229",
+      "sessionMin": 71,
+      "hrAvg": 121,
+      "hrMax": 174,
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+    },
+    {
+      "id": "2026-10-25",
+      "date": "2026-10-25",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 1.5
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20731212662",
+      "sessionMin": 13,
+      "hrAvg": 151,
+      "hrMax": 171,
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+    },
+    {
+      "id": "2026-10-28",
+      "date": "2026-10-28",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 1.5
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20772443723",
+      "sessionMin": 40,
+      "hrAvg": 132,
+      "hrMax": 166,
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+    },
+    {
+      "id": "2026-11-02",
+      "date": "2026-11-02",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 2.0
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20836759979",
+      "sessionMin": 40,
+      "hrAvg": 146,
+      "hrMax": 176,
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+    },
+    {
+      "id": "2026-11-06",
+      "date": "2026-11-06",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 2.5
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20889241314",
+      "sessionMin": 52,
+      "hrAvg": 152,
+      "hrMax": 181,
+      "body": [
+        {
+          "area": "right knee",
+          "level": 2,
+          "note": "Hurt the knee right after this workout. Severity not stated; logged as ache."
+        }
+      ],
+      "notes": "First 2.5 mi run. Distance assigned from David's description of the build-up, not recorded by Strava."
+    },
+    {
+      "id": "2026-11-08",
+      "date": "2026-11-08",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 0.5
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20914509851",
+      "sessionMin": 52,
+      "hrAvg": 128,
+      "hrMax": 162,
+      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate."
+    },
+    {
+      "id": "2026-11-09",
+      "date": "2026-11-09",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 0.5
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20927461775",
+      "sessionMin": 49,
+      "hrAvg": 119,
+      "hrMax": 157,
+      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate."
+    },
+    {
+      "id": "2026-11-10",
+      "date": "2026-11-10",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 0.5
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20941066784",
+      "sessionMin": 52,
+      "hrAvg": 132,
+      "hrMax": 171,
+      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate."
+    },
+    {
+      "id": "2026-11-12",
+      "date": "2026-11-12",
+      "surface": "treadmill",
+      "segments": [
+        {
+          "type": "run",
+          "miles": 0.5
+        }
+      ],
+      "estimated": true,
+      "source": "strava",
+      "stravaId": "20967023394",
+      "sessionMin": 54,
+      "hrAvg": 137,
+      "hrMax": 173,
+      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate."
+    },
+    {
+      "id": "2026-11-15",
+      "date": "2026-11-15",
       "surface": "treadmill",
       "shoeId": "triumph-23",
       "segments": [
@@ -99,7 +323,12 @@
           "note": "No ache."
         }
       ],
-      "notes": "First run in the Saucony Triumph 23. Ran 1 mile, then 0.5. Speed not recorded; surface assumed treadmill."
+      "notes": "First run in the Saucony Triumph 23. Ran 1 mile, then 0.5. Speed not recorded. Date corrected from Nov 14 to match Strava.",
+      "source": "strava",
+      "stravaId": "21004000726",
+      "sessionMin": 39,
+      "hrAvg": 138,
+      "hrMax": 181
     },
     {
       "id": "2026-11-16",
@@ -129,7 +358,12 @@
           "note": "No ache."
         }
       ],
-      "notes": "Run 1 / walk 0.1 / run 1 at 5.4 mph."
+      "notes": "Run 1 / walk 0.1 / run 1 at 5.4 mph.",
+      "source": "strava",
+      "stravaId": "21016322584",
+      "sessionMin": 44,
+      "hrAvg": 106,
+      "hrMax": 161
     },
     {
       "id": "2026-11-18",

@@ -195,7 +195,7 @@
     const thisW = weeks[weekStart(today)] || { run: 0, walk: 0, n: 0 };
     const maxW = Math.max(1, ...wk.map((w) => weeks[w].run + weeks[w].walk));
     $('weeks').innerHTML = wk.map((w) => { const x = weeks[w]; return `<div class="week"><span class="sub">Wk of ${fmtDate(w, { month: 'short', day: 'numeric' })}</span><div class="bar"><i style="width:${(x.run / maxW) * 100}%"></i><i class="walk" style="width:${(x.walk / maxW) * 100}%"></i></div><span class="num">${mi(x.run)} mi</span></div>`; }).join('') +
-      `<div class="sub" style="margin-top:6px">Run miles shown; grey is walking. Tracking starts ${fmtDate(data.meta.trackingStart)}, so that first week is partial.</div>`;
+      '<div class="sub" style="margin-top:6px">Run miles shown; grey is walking. Weeks with estimated distances are approximate.</div>';
 
     // Stats
     const last = runs[runs.length - 1];
@@ -217,6 +217,7 @@
     const hrRuns = runs.map((r) => { const s = r.segments.filter((x) => x.type === 'run' && x.hr != null); return s.length ? { r, s } : null; }).filter(Boolean);
     $('hr').innerHTML = (hrRuns.length ? `<table><tr><th>Date</th><th>First run segment</th><th>Later</th><th>Drift</th></tr>${hrRuns.map(({ r, s }) => { const first = hrMid(s[0].hr), rest = s.slice(1); const later = rest.length ? sum(rest, (x) => hrMid(x.hr)) / rest.length : null; return `<tr><td>${fmtDate(r.date, { month: 'short', day: 'numeric' })}</td><td class="num">${hrText(s[0])}</td><td class="num">${rest.map(hrText).join(', ') || '-'}</td><td class="num">${later == null ? '-' : (later - first >= 0 ? '+' : '') + Math.round(later - first)}</td></tr>`; }).join('')}</table>` : '<span class="sub">No heart rate logged yet.</span>') +
       (data.observations || []).filter((o) => o.topic === 'heart rate').map((o) => `<p class="note">${fmtDate(o.date, { month: 'short', day: 'numeric' })}: ${esc(o.note)}</p>`).join('') +
+      (() => { const ss = runs.filter((r) => r.hrAvg); return ss.length ? `<table style="margin-top:14px"><tr><th>Session</th><th>Run mi</th><th>Avg</th><th>Max</th><th>Min</th></tr>${[...ss].reverse().map((r) => `<tr><td>${fmtDate(r.date, { month: 'short', day: 'numeric' })}</td><td class="num">${r.estimated ? '~' : ''}${mi(runMi(r))}</td><td class="num">${r.hrAvg}</td><td class="num">${r.hrMax}</td><td class="num">${r.sessionMin}</td></tr>`).join('')}</table><p class="note">${esc(data.meta.sessionHrNote || '')}</p>` : ''; })() +
       '<p class="note">~ marks an estimate. Drift is how much later segments sit above the first at the same effort; it should shrink as fitness builds.</p>';
 
     // Shoes
@@ -248,7 +249,8 @@
       const tot = runMi(r) + walkMi(r), shoe = (data.shoes || []).find((s) => s.id === r.shoeId);
       const mins = r.segments.every((s) => s.mph || s.type === 'walk') && r.segments.some((s) => s.mph) ? sum(r.segments.filter((s) => s.mph), (s) => (s.miles / s.mph) * 60) : null;
       return `<article class="card"><div class="run-head"><b>${fmtDate(r.date)}${r._pending ? ' <span class="badge" style="border-color:var(--warn);color:var(--warn)">not sent</span>' : ''}</b><span class="num">${mi(runMi(r))} mi run${walkMi(r) ? ` + ${mi(walkMi(r))} walk` : ''}</span></div>
-        <div class="sub">${esc(r.surface || '')}${shoe ? ' · ' + esc(shoe.name) : ''}${mins ? ` · ${Math.round(mins)} min running` : ''}${r.rpe ? ` · RPE ${r.rpe}` : ''}</div>
+        <div class="sub">${esc(r.surface || '')}${shoe ? ' · ' + esc(shoe.name) : ''}${mins ? ` · ${Math.round(mins)} min running` : ''}${r.rpe ? ` · RPE ${r.rpe}` : ''}${r.estimated ? ' · distance estimated' : ''}</div>
+        ${r.hrAvg ? `<div class="sub">Session HR avg ${r.hrAvg} / max ${r.hrMax} bpm over ${r.sessionMin} min (whole workout)</div>` : ''}
         <div class="segbar">${r.segments.map((s) => `<i class="${s.type}" style="width:${(s.miles / tot) * 100}%"></i>`).join('')}</div>
         <div class="segs">${r.segments.map((s) => `<span class="seg ${s.type}">${s.type} ${mi(s.miles)}${s.mph ? ` @ ${s.mph} mph (${pace(s.mph)}/mi)` : ''}${s.hr != null ? ' · ' + hrText(s) : ''}</span>`).join('')}</div>
         ${(r.body || []).length ? `<div class="chips">${r.body.map((b) => `<span class="chip l${b.level}" title="${esc(b.note || '')}">${esc(b.area)}: ${LEVELS[b.level]}</span>`).join('')}</div>` : ''}
