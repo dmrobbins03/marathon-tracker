@@ -9,3 +9,4 @@ David reports runs in chat. To log one:
 5. Set `meta.updated`, run `node scripts/build.js`, commit, push, and republish `dist/index.html` to the tracker artifact (slug 862e25c3-13c7-42c1-8453-263fb2207e02).
 
 6. Strava is connected. Runs upload as indoor `Workout` activities with no distance; session time and HR cover the whole workout (lifting included). Use it for dates and `hrAvg`/`hrMax`/`sessionMin`; distance and speed come from David. Mark distances he didn't give per run with `estimated: true`.
+7. Every run gets a `location`. Default is `meta.defaultLocation` (garage, Woodway 4Front treadmill); for outdoor runs record the place he names and set `surface` (road/track/trail).

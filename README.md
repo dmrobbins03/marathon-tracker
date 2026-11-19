@@ -13,7 +13,7 @@ No dependencies. `data/log.json` is the source of truth; most entries are added 
 
 ## Data
 
-- `runs[]`: `date`, `surface`, `shoeId`, `segments[]` (`type` run/walk, `miles`, optional `mph`, `hr` as a number or `[low, high]`, `hrApprox`), optional `rpe`, `lift`, `notes`, `estimated`, Strava session fields (`hrAvg`, `hrMax`, `sessionMin`, `stravaId`), and `body[]` (`area`, `level` 0-3, `note`).
+- `runs[]`: `date`, `location`, `surface`, `shoeId`, `segments[]` (`type` run/walk, `miles`, optional `mph`, `hr` as a number or `[low, high]`, `hrApprox`), optional `rpe`, `lift`, `notes`, `estimated`, Strava session fields (`hrAvg`, `hrMax`, `sessionMin`, `stravaId`), and `body[]` (`area`, `level` 0-3, `note`).
 - `goals[]`: each goal keeps its own `history[]` of dated changes with a reason, so revisions stay visible.
 - `shoes[]`, `injuries[]`, `observations[]`, `race`, `plan`.
 

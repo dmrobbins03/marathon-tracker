@@ -8,7 +8,8 @@
       "2": "ache",
       "3": "pain / had to stop"
     },
-    "sessionHrNote": "Session HR and minutes come from Strava and cover the whole workout, including lifting, bike and rehab."
+    "sessionHrNote": "Session HR and minutes come from Strava and cover the whole workout, including lifting, bike and rehab.",
+    "defaultLocation": "Garage, Woodway 4Front treadmill"
   },
   "race": {
     "name": null,
@@ -69,6 +70,11 @@
       "date": "2026-11-18",
       "topic": "heart rate",
       "note": "First mile sits around 150 bpm; second mile is higher, 160-170 bpm."
+    },
+    {
+      "date": "2026-11-18",
+      "topic": "location",
+      "note": "Going stir-crazy running at this low pace on the treadmill; plans to start running outside. Default location is the garage on the Woodway 4Front."
     }
   ],
   "bodyAreas": [
@@ -94,7 +100,8 @@
       "sessionMin": 25,
       "hrAvg": 142,
       "hrMax": 168,
-      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-10-07",
@@ -112,7 +119,8 @@
       "sessionMin": 56,
       "hrAvg": 132,
       "hrMax": 166,
-      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-10-13",
@@ -130,7 +138,8 @@
       "sessionMin": 33,
       "hrAvg": 114,
       "hrMax": 143,
-      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-10-24",
@@ -148,7 +157,8 @@
       "sessionMin": 71,
       "hrAvg": 121,
       "hrMax": 174,
-      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-10-25",
@@ -166,7 +176,8 @@
       "sessionMin": 13,
       "hrAvg": 151,
       "hrMax": 171,
-      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-10-28",
@@ -184,7 +195,8 @@
       "sessionMin": 40,
       "hrAvg": 132,
       "hrMax": 166,
-      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-11-02",
@@ -202,7 +214,8 @@
       "sessionMin": 40,
       "hrAvg": 146,
       "hrMax": 176,
-      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava."
+      "notes": "Distance assigned from David's description of the build-up (1 mi for ~2 weeks, then 1.5, then 2), not recorded by Strava.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-11-06",
@@ -227,7 +240,8 @@
           "note": "Hurt the knee right after this workout. Severity not stated; logged as ache."
         }
       ],
-      "notes": "First 2.5 mi run. Distance assigned from David's description of the build-up, not recorded by Strava."
+      "notes": "First 2.5 mi run. Distance assigned from David's description of the build-up, not recorded by Strava.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-11-08",
@@ -245,7 +259,8 @@
       "sessionMin": 52,
       "hrAvg": 128,
       "hrMax": 162,
-      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate."
+      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-11-09",
@@ -263,7 +278,8 @@
       "sessionMin": 49,
       "hrAvg": 119,
       "hrMax": 157,
-      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate."
+      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-11-10",
@@ -281,7 +297,8 @@
       "sessionMin": 52,
       "hrAvg": 132,
       "hrMax": 171,
-      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate."
+      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-11-12",
@@ -299,7 +316,8 @@
       "sessionMin": 54,
       "hrAvg": 137,
       "hrMax": 173,
-      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate."
+      "notes": "About a half mile of running; the session was mostly bike and rehab. Distance is approximate.",
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-11-15",
@@ -328,7 +346,8 @@
       "stravaId": "21004000726",
       "sessionMin": 39,
       "hrAvg": 138,
-      "hrMax": 181
+      "hrMax": 181,
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-11-16",
@@ -363,7 +382,8 @@
       "stravaId": "21016322584",
       "sessionMin": 44,
       "hrAvg": 106,
-      "hrMax": 161
+      "hrMax": 161,
+      "location": "Garage, Woodway 4Front treadmill"
     },
     {
       "id": "2026-11-18",
@@ -410,7 +430,8 @@
           "note": "Minor irritation."
         }
       ],
-      "notes": "Run 1 at 5.4 / walk 0.1 / run 1 at 5.3. HR is the typical pattern reported, not a measured reading for this run."
+      "notes": "Run 1 at 5.4 / walk 0.1 / run 1 at 5.3. HR is the typical pattern reported, not a measured reading for this run.",
+      "location": "Garage, Woodway 4Front treadmill"
     }
   ]
 }
