@@ -11,7 +11,7 @@
   },
   "race": {
     "name": null,
-    "date": null,
+    "date": "2027-01-15",
     "window": "January 2027",
     "distanceMi": 13.1
   },
@@ -22,14 +22,19 @@
   "goals": [
     {
       "id": "half-jan-2027",
-      "title": "Run a half marathon",
-      "target": "January 2027 (race and exact date not recorded yet)",
+      "title": "Finish a half marathon",
+      "target": "Finish the race on January 15, 2027. No time goal.",
       "status": "active",
       "history": [
         {
           "date": "2026-11-18",
           "change": "Goal recorded: half marathon in January 2027, following a 12-week run/walk plan with lifts on run days.",
           "reason": "Set earlier in November 2026; entered when the tracker was created."
+        },
+        {
+          "date": "2026-11-18",
+          "change": "Race date set to January 15, 2027. Goal is to finish; no time target.",
+          "reason": "Confirmed in chat."
         }
       ]
     }
@@ -65,7 +70,12 @@
       "note": "First mile sits around 150 bpm; second mile is higher, 160-170 bpm."
     }
   ],
-  "bodyAreas": ["right knee", "left knee", "right ankle", "left ankle"],
+  "bodyAreas": [
+    "right knee",
+    "left knee",
+    "right ankle",
+    "left ankle"
+  ],
   "runs": [
     {
       "id": "2026-11-14",
@@ -73,11 +83,21 @@
       "surface": "treadmill",
       "shoeId": "triumph-23",
       "segments": [
-        { "type": "run", "miles": 1.0 },
-        { "type": "run", "miles": 0.5 }
+        {
+          "type": "run",
+          "miles": 1.0
+        },
+        {
+          "type": "run",
+          "miles": 0.5
+        }
       ],
       "body": [
-        { "area": "right knee", "level": 0, "note": "No ache." }
+        {
+          "area": "right knee",
+          "level": 0,
+          "note": "No ache."
+        }
       ],
       "notes": "First run in the Saucony Triumph 23. Ran 1 mile, then 0.5. Speed not recorded; surface assumed treadmill."
     },
@@ -87,12 +107,27 @@
       "surface": "treadmill",
       "shoeId": "triumph-23",
       "segments": [
-        { "type": "run", "miles": 1.0, "mph": 5.4 },
-        { "type": "walk", "miles": 0.1 },
-        { "type": "run", "miles": 1.0, "mph": 5.4 }
+        {
+          "type": "run",
+          "miles": 1.0,
+          "mph": 5.4
+        },
+        {
+          "type": "walk",
+          "miles": 0.1
+        },
+        {
+          "type": "run",
+          "miles": 1.0,
+          "mph": 5.4
+        }
       ],
       "body": [
-        { "area": "right knee", "level": 0, "note": "No ache." }
+        {
+          "area": "right knee",
+          "level": 0,
+          "note": "No ache."
+        }
       ],
       "notes": "Run 1 / walk 0.1 / run 1 at 5.4 mph."
     },
@@ -102,14 +137,44 @@
       "surface": "treadmill",
       "shoeId": "triumph-23",
       "segments": [
-        { "type": "run", "miles": 1.0, "mph": 5.4, "hr": 150, "hrApprox": true },
-        { "type": "walk", "miles": 0.1 },
-        { "type": "run", "miles": 1.0, "mph": 5.3, "hr": [160, 170], "hrApprox": true }
+        {
+          "type": "run",
+          "miles": 1.0,
+          "mph": 5.4,
+          "hr": 150,
+          "hrApprox": true
+        },
+        {
+          "type": "walk",
+          "miles": 0.1
+        },
+        {
+          "type": "run",
+          "miles": 1.0,
+          "mph": 5.3,
+          "hr": [
+            160,
+            170
+          ],
+          "hrApprox": true
+        }
       ],
       "body": [
-        { "area": "right knee", "level": 0, "note": "Has not ached since the shoe change." },
-        { "area": "right ankle", "level": 1, "note": "Minor irritation." },
-        { "area": "left knee", "level": 1, "note": "Minor irritation." }
+        {
+          "area": "right knee",
+          "level": 0,
+          "note": "Has not ached since the shoe change."
+        },
+        {
+          "area": "right ankle",
+          "level": 1,
+          "note": "Minor irritation."
+        },
+        {
+          "area": "left knee",
+          "level": 1,
+          "note": "Minor irritation."
+        }
       ],
       "notes": "Run 1 at 5.4 / walk 0.1 / run 1 at 5.3. HR is the typical pattern reported, not a measured reading for this run."
     }
