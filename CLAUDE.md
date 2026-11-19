@@ -6,4 +6,4 @@ David reports runs in chat. To log one:
 2. Record only what he said. Put assumptions in `notes`; mark estimated heart rate with `hrApprox: true`.
 3. Add a `body[]` entry for every area he mentions, including "no pain" (level 0). The right knee (jumper's knee) should get an entry every run when he comments on it.
 4. Goal changes never overwrite: add a dated entry with a reason to that goal's `history[]`, and update `target`/`status`.
-5. Set `meta.updated`, run `node scripts/build.js`, commit, push, and republish `dist/index.html` to the tracker artifact.
+5. Set `meta.updated`, run `node scripts/build.js`, commit, push, and republish `dist/index.html` to the tracker artifact (slug 862e25c3-13c7-42c1-8453-263fb2207e02).
