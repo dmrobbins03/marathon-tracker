@@ -13,8 +13,8 @@ No dependencies. `data/log.json` is the source of truth; most entries are added 
 
 ## Data
 
-- `runs[]`: `date`, `location`, `surface`, `shoeId`, `segments[]` (`type` run/walk, `miles`, optional `mph`, `hr` as a number or `[low, high]`, `hrApprox`), optional `rpe`, `lift`, `notes`, `estimated`, Strava session fields (`hrAvg`, `hrMax`, `sessionMin`, `stravaId`), and `body[]` (`area`, `level` 0-3, `note`).
+- `runs[]`: `date`, `location`, `surface`, `shoeId`, `segments[]` (`type` run/walk, `miles`, optional `mph`, `hr` as a number or `[low, high]`, `hrApprox`), optional `rpe`, `lift`, `notes`, `estimated`, Strava session fields (`hrAvg`, `hrMax`, `sessionMin`, `stravaId`), and `body[]` (`area`, `level` 0-10, optional `levelMax`, `levelEst`, `note`).
 - `goals[]`: each goal keeps its own `history[]` of dated changes with a reason, so revisions stay visible.
 - `shoes[]`, `injuries[]`, `observations[]`, `race`, `plan`.
 
-Body scale: 0 none, 1 minor irritation, 2 ache, 3 pain / had to stop.
+Body scale is pain 0-10: 0 none, 1-3 mild, 4-5 moderate, 6-10 severe. `checks[]` holds body checks not tied to a run.
