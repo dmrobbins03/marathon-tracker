@@ -10,3 +10,4 @@ David reports runs in chat. To log one:
 
 6. Strava is connected. Runs upload as indoor `Workout` activities with no distance; session time and HR cover the whole workout (lifting included). Use it for dates and `hrAvg`/`hrMax`/`sessionMin`; distance and speed come from David. Mark distances he didn't give per run with `estimated: true`.
 7. Every run gets a `location`. Default is `meta.defaultLocation` (garage, Woodway 4Front treadmill); for outdoor runs record the place he names and set `surface` (road/track/trail).
+8. Body reports that aren't tied to a run (morning-after checks, squat tests) go in `checks[]`: `date`, `context`, `body[]`. A range like "1 or 2" is `level` + `levelMax`.

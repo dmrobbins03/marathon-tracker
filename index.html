@@ -209,9 +209,9 @@
 
     // Body: latest level per area + history
     const areas = {};
-    for (const r of runs) for (const b of r.body || []) (areas[b.area] ||= []).push({ date: r.date, ...b });
+    for (const r of [...runs, ...(data.checks || [])].sort((a, b) => a.date.localeCompare(b.date))) for (const b of r.body || []) (areas[b.area] ||= []).push({ date: r.date, ...b, level: b.levelMax ?? b.level, label: b.levelMax ? `${b.level}-${b.levelMax}` : String(b.level), context: r.context });
     const areaNames = Object.keys(areas);
-    $('body').innerHTML = (areaNames.length ? `<table><tr><th>Area</th><th>Latest</th><th>History</th></tr>${areaNames.map((a) => { const h = areas[a], l = h[h.length - 1]; return `<tr><td>${esc(a)}</td><td><span class="chip l${l.level}">${l.level} · ${LEVELS[l.level]}</span></td><td><span class="dots">${h.map((x) => `<span class="dot l${x.level}" title="${fmtDate(x.date)}: ${LEVELS[x.level]}"></span>`).join('')}</span></td></tr>`; }).join('')}</table>` : '<span class="sub">No body checks yet.</span>') +
+    $('body').innerHTML = (areaNames.length ? `<table><tr><th>Area</th><th>Latest</th><th>History</th></tr>${areaNames.map((a) => { const h = areas[a], l = h[h.length - 1]; return `<tr><td>${esc(a)}</td><td><span class="chip l${l.level}">${l.label} · ${LEVELS[l.level]}</span><div class="sub">${fmtDate(l.date, { month: 'short', day: 'numeric' })}${l.context ? ' · ' + esc(l.context) : ''}</div></td><td><span class="dots">${h.map((x) => `<span class="dot l${x.level}" title="${fmtDate(x.date)}: ${LEVELS[x.level]}"></span>`).join('')}</span></td></tr>`; }).join('')}</table>` : '<span class="sub">No body checks yet.</span>') +
       (data.injuries || []).map((i) => `<p class="note"><b style="color:var(--ink)">${esc(i.name)}</b>, ${esc(i.area)}. ${esc(i.detail || '')} Onset: ${esc(i.onset)}. Trigger: ${esc(i.trigger)} ${esc(i.status || '')}</p>`).join('');
 
     // HR: first run segment vs later run segments
@@ -231,7 +231,7 @@
       if (l.level >= 2) flags.push(['bad', `${a}: ${LEVELS[l.level]} on ${fmtDate(l.date)}. Hold or cut distance until it settles.`]);
       else if (l.level === 1) { const streak = h.length > 1 && h[h.length - 2].level >= 1; flags.push(['', `${a}: minor irritation${streak ? ' on consecutive checks' : ''} (${fmtDate(l.date)}). Note whether it fades or builds next run.`]); }
     }
-    for (const i of data.injuries || []) { const h = areas[i.area]; if (h) { let since = null; for (let k = h.length - 1; k >= 0 && h[k].level === 0; k--) since = h[k].date; if (since) flags.push(['ok', `${i.area}: clear for ${h.filter((x) => x.date >= since).length} logged runs since ${fmtDate(since)}.`]); } }
+    for (const i of data.injuries || []) { const h = areas[i.area]; if (h) { let since = null; for (let k = h.length - 1; k >= 0 && h[k].level === 0; k--) since = h[k].date; if (since) flags.push(['ok', `${i.area}: clear for ${h.filter((x) => x.date >= since).length} checks since ${fmtDate(since)}.`]); } }
     const cw = weekStart(today), pi = wk.indexOf(cw) - 1;
     if (pi >= 0 && weeks[wk[pi]].run > 0 && wk[pi] !== weekStart(data.meta.trackingStart)) { const up = (weeks[cw].run / weeks[wk[pi]].run - 1) * 100; if (up > 15) flags.push(['', `Run miles are up ${Math.round(up)}% on last week. The knee flared after a distance jump, so build gradually.`]); }
     const lifts = runs.filter((r) => r.lift).slice(-1)[0];

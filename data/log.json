@@ -1,7 +1,7 @@
 {
   "meta": {
     "trackingStart": "2026-10-01",
-    "updated": "2026-11-22",
+    "updated": "2026-11-23",
     "severityScale": {
       "0": "none",
       "1": "minor irritation",
@@ -485,6 +485,20 @@
           "area": "right knee",
           "level": 2,
           "note": "Started to ache on the downhill; turned around earlier than planned because uphill felt better. Feels good after the run. Assumed to be the right knee."
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-11-23",
+      "context": "single-leg squat, morning after the 3 mi outdoor run",
+      "body": [
+        {
+          "area": "right knee",
+          "level": 1,
+          "levelMax": 2,
+          "note": "Reported as \"1 or 2\" after a single-leg squat. Scale not confirmed; logged on the tracker's 0-3 scale."
         }
       ]
     }
