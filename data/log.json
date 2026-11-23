@@ -62,7 +62,7 @@
       "detail": "Inner side, below the kneecap.",
       "onset": "Right after the first 2.5 mi workout (about Nov 6, 2026)",
       "trigger": "Belt squats the day after increasing run distance.",
-      "status": "No ache since 2026-11-15 (first run in Triumph 23)."
+      "status": "Clear Nov 15-18. Ached on a downhill on Nov 22 (first outdoor run), fine afterward."
     }
   ],
   "observations": [
@@ -75,6 +75,11 @@
       "date": "2026-11-18",
       "topic": "location",
       "note": "Going stir-crazy running at this low pace on the treadmill; plans to start running outside. Default location is the garage on the Woodway 4Front."
+    },
+    {
+      "date": "2026-11-22",
+      "topic": "knee",
+      "note": "Downhill running brings on the knee ache; uphill feels better."
     }
   ],
   "bodyAreas": [
@@ -473,7 +478,15 @@
       "hrAvg": 148,
       "hrMax": 169,
       "elevGainFt": 157,
-      "notes": "First outdoor run and first 3 miles, continuous (32:47, 10:54/mi average). Mile splits 10:14, 11:29, 11:03. Cooldown walk logged separately in Strava. Surface assumed road; shoes and body check not reported yet."
+      "notes": "First outdoor run and first 3 miles, continuous (32:47, 10:54/mi average). Mile splits 10:14, 11:29, 11:03. Cut slightly short of the planned route because of the knee on the downhill. Cooldown walk logged separately in Strava. Surface assumed road.",
+      "shoeId": "triumph-23",
+      "body": [
+        {
+          "area": "right knee",
+          "level": 2,
+          "note": "Started to ache on the downhill; turned around earlier than planned because uphill felt better. Feels good after the run. Assumed to be the right knee."
+        }
+      ]
     }
   ]
 }
